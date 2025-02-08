@@ -1,0 +1,90 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #e3e3e1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    #grid-container {
+        position: absolute;
+        top: 15%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .gridRow {
+            align-self: center;
+            display: flex;
+            flex-direction: row;
+
+            .gridCell {
+                width: 80px;
+                height: 80px;
+                margin: 4px;
+                border: 1px solid darkgray;
+                border-radius: 2px;
+                font-family: "Sans Serif Collection", ui-rounded;
+                font-size: 2em;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    dialog {
+        border: none;
+        font-family: "Sans Serif Collection", ui-rounded;
+        font-size: 1.5em;
+        font-weight: bold;
+        user-select: none;
+        outline: none;
+    }
+
+    #keyboard-container {
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+
+        .row {
+            align-self: center;
+            display: flex;
+
+            .letter {
+                height: 60px;
+                width: 40px;
+                background-color: #d3d6da;
+                border-radius: 4px;
+                font-family: "Sans Serif Collection", ui-rounded;
+                font-size: 1.25em;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 4px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .letter-backspace {
+                font-size: .75em;
+                width: 85px;
+            }
+
+            .letter-enter {
+                font-size: .75em;
+                width: 55px;
+            }
+        }
+
+    }
+}
